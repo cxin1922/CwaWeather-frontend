@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>森森天氣</title>
-    <link rel="icon" type="image/png" href="./icon-v2.png">
-    <link rel="apple-touch-icon" href="./icon-v2.png">
+    <title>HAHA 氣象預報</title>
+    <link rel="icon" type="image/png" href="./icon-gemini3.png">
+    <link rel="apple-touch-icon" href="./icon-gemini3.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./icon-v2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
         rel="stylesheet">
 
     <style>
-        :root {
+        /* :root {
             --ac-green: #7DE1A9;
             --ac-bg-pattern: #8FD8AF;
             --ac-cream: #FFFEF2;
@@ -23,7 +23,19 @@
             --ac-blue: #4FB5D9;
             --ac-dark: #58504A;
             --ac-card-border: #E6E0C8;
-        }
+        } */
+        
+         :root {
+            --ac-green: #e0cdcf;        /* 莫蘭迪粉 */
+            --ac-bg-pattern: #F4DEC7;   /* 橘粉霧面 */
+            --ac-cream: #FFF6E9;        /* 奶油淡黃 */
+            --ac-yellow: #F3E3A3;       /* 柔霧芥末黃 */
+            --ac-brown: #9C7A6C;        /* 柔霧棕 */
+            --ac-blue: #EAC3A2;         /* 橘米色（替代原藍色） */
+            --ac-dark: #6A5952;         /* 深霧面棕 */
+            --ac-card-border: #EDD9C8;  /* 淺暖卡其 */
+        }       
+
 
         * {
             margin: 0;
@@ -264,7 +276,7 @@
         <p style="color: white; font-weight: bold; margin-top: 20px;">正在觀測雲的流動...</p>
     </div>
     <div class="status-bar">
-        <div class="location-pill">📍 高雄</div>
+        <div class="location-pill">📍 桃園</div>
         <div id="updateTime" class="update-pill">更新中...</div>
     </div>
 
@@ -280,7 +292,7 @@
     </div>
 
     <script>
-        const API_URL = "https://cwa-backend-api.zeabur.app/api/weather/kaohsiung";
+        const API_URL = "https://cwaweather-backend-xin.zeabur.app/api/weather/Taoyuan";
 
         function getWeatherIcon(weather) {
             if (!weather) return "🌤️";
